@@ -8,7 +8,7 @@ const path = require('path');
 // Configuration
 const config = {
     port: process.env.PORT || 3000,
-    apiKey: wB2WppJXL6r6L4s8DjnXrrAA5ZySXgx1, // 
+    apiKey: "wB2WppJXL6r6L4s8DjnXrrAA5ZySXgx1", // 
     dataRefreshInterval: '0 0 * * *', // Daily at midnight (cron format)
     dataFile: path.join(__dirname, 'earnings_data.json')
 };
