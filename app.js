@@ -8,7 +8,7 @@ const path = require('path');
 // Configuration
 const config = {
     port: process.env.PORT || 3000,
-    apiKey: 'YOUR_FMP_API_KEY_HERE', // Get from https://site.financialmodelingprep.com/developer/docs
+    apiKey: process.env.API_KEY, // Get from https://site.financialmodelingprep.com/developer/docs
     dataRefreshInterval: '0 0 * * *', // Daily at midnight (cron format)
     dataFile: path.join(__dirname, 'earnings_data.json')
 };
